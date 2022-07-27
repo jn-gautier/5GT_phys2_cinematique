@@ -27,20 +27,22 @@ Cette image montre que les deux corps tombent en même temps, la seule différen
 \newpage
 
 \section{Le vecteur vitesse dans un mouvement à deux dimensions}
-À un moment donné de sa trajectoire, le mobile possède à la fois une vitesse horizontale,\(\vec{v_x}\), et une vitesse verticale, \(\vec{v_y}\). La vitesse totale du mobile à un instant quelconque est donc donnée par la somme vectorielle de la vitesse horizontale et de la vitesse verticale. Cette somme se fait en utilisant le théorème de Pythagore : \(v_{tot}=\sqrt{v_x ^2 + v_y ^2}\)
+À un moment donné de sa trajectoire, le mobile possède à la fois une vitesse horizontale, \(\vec{v_x}\), et une vitesse verticale, \(\vec{v_y}\). La vitesse totale du mobile à un instant quelconque est donc donnée par la somme vectorielle de la vitesse horizontale et de la vitesse verticale. Cette somme se fait en utilisant le théorème de Pythagore : \(v_{tot}=\sqrt{v_x ^2 + v_y ^2}\)
 
 \begin{tikzpicture}[line cap=round,line join=round]
     \tikzset{>=latex}
-    \definecolor{ffcctt}{rgb}{1,0.8,0.2}
-    \definecolor{qqzzqq}{rgb}{0,0.6,0}
-    \definecolor{ccqqqq}{rgb}{0.8,0,0}
-    \draw [->,line width=2pt,color=ccqqqq] (0,0) -- (0,-4);
-    \draw [->,line width=2pt,color=qqzzqq] (0,0) -- (3,0);
-    \draw [->,line width=2pt,color=ffcctt] (0,0) -- (3,-4);
+
+    \draw [line width=1pt,color=ForestGreen,style=dotted,draw opacity=0.5] (0,-4) -- (3,-4);
+    \draw [line width=1pt,color=BrickRed,style=dotted,draw opacity=0.5] (3,0) -- (3,-4);
+
+    \draw [->,line width=2pt,color=BrickRed] (0,0) -- (0,-4);
+    \draw [->,line width=2pt,color=ForestGreen] (0,0) -- (3,0);
+    \draw [->,line width=2pt,color=YellowOrange] (0,0) -- (3,-4);
+
     \begin{scriptsize}
-        \draw[color=ccqqqq] (0.78,-1.71) node {\(\vec{v_y}\)};
-        \draw[color=qqzzqq] (2.2,0.39) node {\(\vec{v_x}\)};
-        \draw[color=ffcctt] (2.37,-1.65) node {\(\vec{v_{tot}}\)};
+        \draw[color=BrickRed] (0.5,-2) node {\(\vec{v_y}\)};
+        \draw[color=ForestGreen] (1.5,0.2) node {\(\vec{v_x}\)};
+        \draw[color=YellowOrange] (2,-1.5) node {\(\vec{v_{tot}}\)};
     \end{scriptsize}
 \end{tikzpicture}
 
