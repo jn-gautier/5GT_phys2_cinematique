@@ -1,0 +1,16 @@
+ \begin{tikzpicture}[>=latex,scale=0.8]
+            \tkzInit[xmax=20,ymax=20,xstep=2,ystep=2]
+            \tkzGrid[]
+            \tkzDrawX[label={$Temps\unit{[s]}$},below left=25pt]
+            \tkzDrawY[label={$Position\unit{\unit{[m]}}$},right=5pt]
+            \tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelY
+            \tkzFct[domain =0:20,ultra thick,color=ForestGreen]{-0.1*(\x**2)+2*\x} %
+            \tkzDefPoints{0/10/A,20/10/B}
+            \tkzDefPoints{10/2/C,4/6/D,16/6/E}
+            \tkzDrawSegment[->,gray](C,D)
+            \tkzDrawSegment[->,gray](C,E)
+            \tkzDrawSegment[color=red,ultra thick](A,B)
+            \tkzText[draw, color=black,fill=lightgray,text width=7cm](10,16){Les points situés au-delà de la hauteur maximale ne sont jamais atteints}
+            \tkzText[draw, color=black,fill=lightgray,text width=5cm](10,2){Les points situés en-dessous de la hauteur maximale sont atteints deux fois}
+
+          \end{tikzpicture}
