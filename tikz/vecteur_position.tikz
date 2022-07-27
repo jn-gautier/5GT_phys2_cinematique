@@ -1,0 +1,28 @@
+\begin{tikzpicture}
+\tikzset{>=latex}
+\definecolor{majorgrid_gray}{RGB} {192,192,192}
+\definecolor{minorgrid_gray}{RGB} {232,232,232}
+
+\def\tkzCoeffSubColor{20} 
+\def\tkzCoeffSubLw{0.2}
+
+\tkzInit[xmax=10,ymax=6,xstep=1,ystep=1]
+\tkzGrid[color=majorgrid_gray,line width=0.2mm,sub,subxstep=.5,subystep=.5]
+
+\tkzDrawX[label={$X [m]$},below left=25pt]
+\tkzDrawY[label={$Y [m]$},right=5pt]
+\tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelY
+
+\tkzDefPoints{0/0/O, 4/5/M, 7/3/P};
+\tkzDrawPoints[black](O)
+\tkzDrawPoints[blue](M)
+\tkzDrawPoints[red](P)
+\tkzLabelPoints[color=black,above=2pt](O)
+\tkzLabelPoints[color=blue,above=2pt](M)
+\tkzLabelPoints[color=red](P)
+\tkzDrawSegment[blue,->](O,M)
+\tkzDrawSegment[red,->](O,P)
+\tkzLabelSegment[color=blue,above=5pt](O,M){$\vec{OM}$}
+\tkzLabelSegment[color=red,above=3pt](O,P){$\vec{OP}$}
+\end{tikzpicture}
+

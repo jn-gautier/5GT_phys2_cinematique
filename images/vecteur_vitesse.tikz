@@ -1,0 +1,34 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{ffcctt}{rgb}{1,0.8,0.2}
+\definecolor{qqzzqq}{rgb}{0,0.6,0}
+\definecolor{ccqqqq}{rgb}{0.8,0,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-11.32,
+xmax=11.32,
+ymin=-9.620000000000001,
+ymax=9.620000000000001,
+xtick={-11,-10,...,11},
+ytick={-9,-8,...,9},]
+\clip(-11.32,-9.62) rectangle (11.32,9.62);
+\draw [->,line width=2pt,color=ccqqqq] (0,0) -- (0,-4);
+\draw [->,line width=2pt,color=qqzzqq] (0,0) -- (3,0);
+\draw [->,line width=2pt,color=ffcctt] (0,0) -- (3,-4);
+\begin{scriptsize}
+\draw[color=ccqqqq] (0.78,-1.71) node {$$\vec{v_y}$$};
+\draw[color=qqzzqq] (2.2,0.39) node {$$\vec{v_x}$$};
+\draw[color=ffcctt] (2.37,-1.65) node {$$\vec{v_{tot}}$$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}

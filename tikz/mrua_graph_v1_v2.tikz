@@ -1,0 +1,13 @@
+\begin{tikzpicture}[>=latex]
+\tkzInit[xmax=10,ymax=10,xstep=1,ystep=1]
+\tkzGrid[]
+\tkzDrawX[label={$Temps[s]$},below left=25pt]
+\tkzDrawY[label={$Vitesse[m \cdot s^{-1}]$},right=5pt]
+\tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelY
+
+\tkzDefPoints{0/2/O, 10/6/A, 8/10/B};
+\tkzDrawSegment[blue](O,A)
+\tkzDrawSegment[red](O,B)
+\tkzLabelSegment[color=blue,above=5pt](O,A){$A$}
+\tkzLabelSegment[color=red,above=3pt](O,B){$B$}
+\end{tikzpicture}

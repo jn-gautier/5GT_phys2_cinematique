@@ -1,0 +1,23 @@
+\newcommand{\bonhommer}{
+\draw [fill=black,draw=none,line width=0.3pt,xshift=-15] (0.0pt,44.4pt)
+-- (0.0pt,22.9pt)
+-- (5.8pt,22.9pt)
+-- (5.8pt,38.7pt)
+-- (7.0pt,38.7pt)
+-- (7.0pt,0.0pt)
+-- ++(5.7pt,0.0pt)
+-- ++(0.0pt,18.0pt)
+-- ++(3.1pt,0.0pt)
+-- (15.8pt,0.0pt)
+-- ++(5.7pt,0.0pt)
+-- ++(0.0pt,38.7pt)
+-- ++(1.2pt,0.0pt)
+-- (22.7pt,22.9pt)
+-- ++(5.7pt,0.0pt)
+-- ++(0.0pt,21.5pt)
+-- cycle
+;
+\begin{scope}[xscale=1,yscale=-1,xshift=-15]
+\draw [fill=black,draw=none,line width=0.3pt] (14.2pt,-53.4pt) circle (6.6pt);
+\end{scope}
+}

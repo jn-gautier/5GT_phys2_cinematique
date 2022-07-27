@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+
+\tkzInit[xmin=0,xmax=10,ymin=0,ymax=5,xstep=1,ystep=1]
+
+\tkzDrawX[label={$X [m]$},below left=25pt]
+\tkzDrawY[label={$Y [m]$},right=5pt]
+\tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelYnode font=\tiny]
+
+\tkzFct[domain=0:10,red]{-0.01*(x-6)**4+0.3*(x-6)**2+2}
+
+\end{tikzpicture} 

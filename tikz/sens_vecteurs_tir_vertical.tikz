@@ -1,0 +1,26 @@
+\begin{tikzpicture}[>=latex]
+\usetikzlibrary[patterns]
+\definecolor{jaune}{HTML}{ffb500}
+\definecolor{rouge}{HTML}{ff0000}
+\definecolor{vert}{HTML}{378448}
+
+\filldraw [pattern=crosshatch](0,0) rectangle (15,1); %le rectangle du rail
+\draw[->,line width=1.3mm](2,1)-- (2,7);%l'axe X
+\node at (1.5,7) {\huge X};
+
+\node [color=rouge,rotate=90,anchor=east] at (4.5,5) {\huge ascension};
+\draw [->,line width=.7mm,color=rouge](5,2)-- (5,5);
+\node [color=rouge] at (5.5,5) {\Huge $\vec{v}$};
+
+\node [color=jaune,rotate=90,anchor=east] at (7.5,5) {\huge descente};
+\draw [<-,line width=.7mm,color=jaune](8,2)-- (8,5);
+\node [color=jaune]at (8.5,5) {\Huge $\vec{v}$};
+
+\node [color=vert,rotate=90,anchor=east] at (10.5,5) {\huge toujours};
+\draw [<-,line width=.7mm,color=vert](11,2)-- (11,5);
+\node [color=vert] at (11.5,5){\Huge $\vec{a}$};
+
+
+
+
+\end{tikzpicture} 

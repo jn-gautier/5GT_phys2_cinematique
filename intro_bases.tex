@@ -1,0 +1,247 @@
+\chapter{Introduction}
+Des atomes aux galaxies, jusqu'à l'univers dans son ensemble, tous les objets autour de nous peuvent être considérés en mouvement. Dans l'étude du monde qui nous entoure, il s'agit d'un des premiers aspects auquel l'homme s'est intéressé. L'étude scientifique du mouvement a commencé avec Galilée (1564-1642) puis Newton (1642-1727). Le mouvement de corps comme une galaxie avec les étoiles qui la composent ou celui des molécules d'air dans le vent sont hautement complexes mais d'autre comme celui d'un objet en chute libre ou d'une voiture sur une autoroute sont plus simples.
+La \motcle{cinématique} est l'étude des mouvements. Dans le cadre de ce cours, seuls les mouvements les plus simples seront abordés : les mouvements continus en ligne droite puis, plus tard, les mouvements circulaires.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{galaxie_andromede.png}
+    \caption{La galaxie d'Andromède, la galaxie la plus proche de la Voie lactée. }
+    \label{galaxie_andromede}
+\end{figure}
+
+
+\chapter{Notions de base}
+\section{Mobile et point matériel}
+Quelle que soit la complexité du corps dont on cherche à étudier le mouvement, le \motcle{mobile}, celui-ci sera représenté par un point ou quelque chose de suffisamment petit par rapport au déplacement effectué. Lorsque le mobile est complexe mais qu'il s'agit d'un solide non déformable, il existe toujours un point appelé \motcle{centre de masse} ou centre d'inertie qui se comporte comme si toute la masse du corps était située en ce point.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{mouvement_centre_masse.png}
+    \caption{Le centre de masse décrit une parabole (Centre of mass in extreme sports). }
+    \label{mouvement_centre_masse}
+\end{figure}
+
+\newpage
+
+\section{Référentiel}
+Pour décrire un mouvement de manière quantitative il faut pouvoir localiser le mobile dans l'espace et dans le temps. Notre espace étant à trois dimensions, trois axes de référence sont nécessaires. Pour d'évidentes questions de facilité, ces axes seront presque toujours perpendiculaires entre-eux et avec des graduations linéaires. Les systèmes que nous étudierons seront également munis d'une horloge ou d'un chronomètre.
+
+\begin{encadre}
+    \motcle{Référentiel} ou système de référence : ensemble d'axes gradués souvent perpendiculaires entre eux (repère cartésien et orthonormé) qui permettent de situer le mobile dans l'espace.
+\end{encadre}
+
+Pour l'étude des mouvements rectilignes, un référentiel réduit à un seul axe est suffisant. Le référentiel terrestre constitue souvent un système de référence privilégié.
+On pourra dire qu'un objet est en mouvement lorsque sa position dans le référentiel varie entre deux instants.
+
+\section{Relativité du mouvement}
+On considère qu'un corps est en mouvement si la distance qui le sépare d'un ou plusieurs points varie au cours du temps. La notion de mouvement est relative, elle dépend du référentiel choisi. Le plus souvent, la surface de la Terre sera choisie comme référentiel mais il faut toujours être conscient du référentiel sur base duquel un mouvement est étudié.
+Par exemples :
+\begin{itemize}[label= \textbullet]
+    \item Une personne est assise dans un train, ce train se déplace sur les rails. Cette personne est au repos par rapport au train mais est en mouvement par rapport à un arbre situé au bord des voies. On peut aussi dire que l'arbre est en mouvement si le train est choisi comme référentiel.
+    \item Une personne marche à contre sens sur un escalator de façon à rester sur place par rapport à l'escalier se trouvant à côté de l'escalator. Est-elle en mouvement ou au repos?
+\end{itemize}
+
+\newpage
+
+\section{Position}
+Le schéma ci-dessous représente un homme qui cours, la ligne graduée sert de référentiel. La position du mobile dépend du temps, elle est une fonction du temps. Il existe deux façons de noter la position du mobile,
+\begin{itemize}[label= \textbullet]
+    \item soit on fait référence au fait que la position est fonction du temps et celle-ci se note \(x(t)\)
+    \item soit on met en évidence de numéro de la mesure et la position se note \(x_i\).
+\end{itemize}
+
+\begin{figure}[h!]
+    \centering
+    \resizebox{.7\linewidth}{!}{\input{./tikz/position_repere.tikz}}
+    \caption{Un mouvement à une dimension.}
+    \label{position_referentiel}
+\end{figure}
+
+Complète le tableau ci-dessous en attribuant un symbole à chaque valeur de temps et de position.\\
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\linewidth}{|X|X|X|X|X|}
+    \hline
+    \multicolumn{2}{|l|}{Temps[s]} & \multicolumn{3}{l|}{Position [m]}                              \\
+    \hline
+    Symbole                        & Valeur                            & Symbole & Symbole & Valeur \\
+    \hline
+                                   &                                   &         &         &        \\
+    \hline
+                                   &                                   &         &         &        \\
+    \hline
+                                   &                                   &         &         &        \\
+    \hline
+\end{tabularx}
+\renewcommand{\arraystretch}{1}\\
+
+
+
+\begin{encadre}
+    La première valeur de temps se note \(t_0\). La position à l'instant \(t_0\) se note \(x_0\). Attention, \(x_0\) ne vaut pas forcément zéro et \(t_0\) non plus.
+\end{encadre}
+
+\newpage
+
+\section{Trajectoire}
+La trajectoire d'un objet en mouvement est l'ensemble des positions qu'a occupé cet objet au cours de son mouvement.
+
+\begin{figure}[h!]
+    \centering
+    \resizebox{.6\linewidth}{!}{\input{./tikz/trajectoire_papillon.tikz}}
+    \caption{La trajectoire,en rouge, dans un mouvement à deux dimensions.}
+    \label{position_referentiel}
+\end{figure}
+
+\section{Le déplacement et la durée}
+Au cours de son mouvement, le mobile passe par une série de positions. Le \motcle{déplacement}, correspond à la différence entre 2 positions.
+Pour calculer un déplacement, on fait la différence entre la deuxième et la première position : \(\Delta x=x_2-x_1\) (pour un mouvement à une dimension, sinon, on écrirait \(\Delta r=r_2-r_1\)).
+
+La \motcle{durée} mesure le temps qui s'est écoulé entre ces deux observations, elle correspond à la différence de temps entre celles-ci. Durée  :\(\Delta t=t_2-t_1\).
+
+\begin{figure}[h!]
+    \centering
+    \resizebox{.6\linewidth}{!}{\input{./tikz/deplacement_papillon.tikz}}
+    \caption{Le déplacement, en vert, il peut être inférieur à la longueur de la trajectoire.}
+    \label{position_referentiel}
+\end{figure}
+
+\subsection{delta : la différence}
+En physique, comme en mathématique, le symbole \(\Delta\) signifie qu'on fait une soustraction entre deux valeurs. On fait toujours cette soustraction entre la valeur \enquote{2} et la valeur \enquote{1}.
+\begin{itemize}[label= \textbullet]
+    \item \(\Delta x=x_2-x_1\) : c'est un déplacement en ligne droite.
+    \item \(\Delta t=t_2-t_1\) : c'est une durée
+\end{itemize}
+
+
+\section{Le vecteur position}
+La position d'un objet au sein d'un référentiel peut être représentée par son vecteur position : le vecteur ayant pour origine l'origine du référentiel et son autre extrémité à la position du point. Si l'on note M cette position et O l'origine, le vecteur position se note \(\vec{OM}\) ou \(\vec{r}\).
+\begin{figure}[h!]
+    \centering
+    \resizebox{0.8\linewidth}{!}{\input{./tikz/vecteur_position.tikz}}
+    \caption{Le vecteur position du point M et du point P.}
+    \label{vecteur_position}
+\end{figure}
+
+\newpage
+
+\section{Le vecteur déplacement}
+Le déplacement a été défini comme la différence entre deux positions. Ceci reste valable lorsqu'on considère la dimension vectorielle de la position. Le déplacement de M à P correspond donc à \(\vec{OP} - \vec{OM}\).
+\begin{figure}[h!]
+    \centering
+    \resizebox{0.8\linewidth}{!}{\input{./tikz/vecteur_deplacement.tikz}}
+    \caption{Le vecteur déplacement entre M et P.}
+    \label{vecteur_deplacement}
+\end{figure}
+
+\newpage
+
+\subsection{Application}
+Un mobile se trouve à la position \(P_1 :(3 ; 4)\). Quelques instants plus tard il se trouve à la position \(P_2 :(5 ; -2)\).
+\begin{itemize}[label= \textbullet]
+    \item Représente les vecteurs position \(\vec{r_1}\) et \(\vec{r_2}\) ainsi que le vecteur déplacement \(\vec{\Delta r}\) entre \(P_1\) et \(P_2\).
+    \item Détermine la longueur du déplacement horizontal, \(\Delta x\).
+    \item Détermine la longueur du déplacement vertical, \(\Delta y\).
+    \item Détermine, par calcul (Pythagore), la longueur du vecteur déplacement, \(\vec{\Delta r}\).
+\end{itemize}
+\begin{figure}[h!]
+    \centering
+    \resizebox{0.8\linewidth}{!}{\input{./tikz/repere_exe.tikz}}
+    \caption{Position dans un plan}
+    \label{repere_cartesien}
+\end{figure}
+
+\newpage
+
+\section{Vitesse moyenne et vitesse instantanée}
+Lorsqu'il est en mouvement, un mobile ne se déplace pas toujours à la même vitesse. La vitesse qu'il possède à un instant donné est appelée \motcle{vitesse instantanée}, elle correspond par exemple à ce qui est affiché sur le compteur d'une voiture.\\
+
+La \motcle{vitesse moyenne} est une valeur qui se calcule sur un déplacement et une durée, elle est égale à :
+\(v_{moy}=  \frac{\Delta x}{\Delta t}\).\\
+
+La vitesse instantanée correspond à la vitesse moyenne calculée sur un intervalle de temps extrêmement court. Comme tu le découvriras cette année, ceci est relié à la notion de limite.
+\(v_{inst}= \lim_{\Delta t \to 0}  \frac{\Delta x}{\Delta t}\)
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{vitesse_instantanee.png}
+    \caption{Un compteur de vitesse indique la vitesse instantanée.}
+    \label{vitesse_instantanee}
+\end{figure}
+
+\newpage
+
+\subsection{Vecteur vitesse instantanée}
+La vitesse instantanée étant définie comme : \(v_{inst}= \lim_{\Delta t \to 0}  \frac{\Delta x}{\Delta t}\), il en découle que le vecteur vitesse instantanée est toujours une \textbf{tangente à la courbe de la position} à l'instant pour lequel on souhaite connaître sa valeur.
+
+\begin{encadre}
+    De même, en physique, une vitesse est toujours définie comme étant la \motcle{dérivée de la position par rapport au temps}.
+\end{encadre}
+
+\begin{figure}[h!]
+    \centering
+    \resizebox{0.8\linewidth}{!}{\input{./tikz/vitesse_tangente.tikz}}
+    \caption{Le vecteur vitesse instantanée est toujours tangent à la courbe de la trajectoire.}
+    \label{vecteur_vitesse_instantanee}
+\end{figure}
+\newpage
+
+\subsection{Application}
+À partir du graphique ci-dessous :
+\begin{enumerate}
+    \item complète le tableau \\
+          \renewcommand{\arraystretch}{1.5}
+          \begin{tabularx}{.8\linewidth}{|X|X|}
+              \hline
+              Temps [s] & Position [m] \\
+              \hline
+                        &              \\
+              \hline
+                        &              \\
+              \hline
+                        &              \\
+              \hline
+                        &              \\
+              \hline
+                        &              \\
+              \hline
+          \end{tabularx}
+          \renewcommand{\arraystretch}{1}
+          \\
+    \item calcule la vitesse moyenne entre la position O et A \dotfill
+    \item calcule la vitesse moyenne entre la position A et B \dotfill
+    \item calcule la vitesse moyenne entre la position B et C \dotfill
+    \item calcule la vitesse moyenne entre la position O et C \dotfill
+    \item calcule la vitesse moyenne entre la position A et D \dotfill
+    \item Que peux-tu en conclure? \dotfill \\
+          . \dotfill \\
+          . \dotfill \\
+          . \dotfill
+    \item calcule la vitesse moyenne entre la position O et D \dotfill
+\end{enumerate}
+
+\newpage
+\begin{figure}[h!]
+    \centering
+    \resizebox{\linewidth}{!}{\input{./tikz/analyse_deplacement.tikz}}
+    \caption{Le graphique de la position en fonction du temps.}
+    \label{exercice_deplacement}
+\end{figure}
+
+\newpage
+
+\subsection{Applications}
+\begin{enumerate}
+    \item Le graphique ci-dessous représente la trajectoire d'un mobile. Représente l'allure du vecteur vitesse à différents moments de ce mouvement.
+          \begin{figure}[h!]
+              \centering
+              \resizebox{.8\linewidth}{!}{\input{./tikz/exercice_vecteur_vitesse.tikz}}
+              \caption{Le graphique de la trajectoire.}
+              \label{exercice_deplacement}
+          \end{figure}
+    \item Un mobile se déplace vers l'Est à la vitesse de \(\num{3} \unit{[m/s]}\) durant \(12 \unit{[s]}\). Il s'arrête puis repart vers le Nord-Ouest à la vitesse \(2 \sqrt{2} \unit{[m/s]}\) durant \(6\unit{[s]}\).
+          \begin{enumerate}[label=\alph*)]
+              \item Quelle est la longueur totale de la trajectoire ?
+              \item Quelle est la longueur du déplacement horizontal ?
+              \item Quelle est la longueur du déplacement vertical ?
+              \item Quelle est la longueur du déplacement total ?
+          \end{enumerate}
+\end{enumerate}
+

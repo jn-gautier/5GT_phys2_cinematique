@@ -1,0 +1,25 @@
+\begin{tikzpicture}
+\usetikzlibrary[patterns]
+\definecolor{my_green}{HTML} {08aa00}
+
+\node (masse) at (4.7,1.25){};
+\node (chariot) at (14.5,4.59){};
+\node (poulie_g) at (4.7,4.4){};
+\node (poulie_d) at (4.8,4.59){};
+
+\draw (masse) to (poulie_g);%la corde
+\draw (poulie_d) to (chariot);%la corde
+
+\filldraw [pattern=crosshatch](5,4) rectangle (15,4.3); %le rectangle du rail
+\filldraw[fill=red,draw=black] (5,4.3) circle (3mm);%la poulie
+\filldraw[fill=black,draw=black] (5,4.3) circle (0.5mm);%l'axe de la poulie
+
+\filldraw [fill=lightgray,draw=black](14,4.4) rectangle (15,4.8); %le rectangle du chariot
+\filldraw[fill=white,draw=black] (14.1,4.45) circle (1.5mm);%roue de gauche
+\filldraw[fill=white,draw=black] (14.9,4.45) circle (1.5mm);%roue de droite
+
+\filldraw [fill=my_green,draw=black](4.4,1) rectangle (5,1.5);%rectangle de la masse entrainante
+
+
+
+\end{tikzpicture}

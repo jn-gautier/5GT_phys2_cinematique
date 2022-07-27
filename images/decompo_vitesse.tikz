@@ -1,0 +1,28 @@
+\documentclass[10pt]{article}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{qqccqq}{rgb}{0,0.8,0}
+\definecolor{ffxfqq}{rgb}{1,0.4980392156862745,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\definecolor{qqzzqq}{rgb}{0,0.6,0}
+\definecolor{ffqqqq}{rgb}{1,0,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-11.32,-9.74) rectangle (11.32,9.5);
+\draw [shift={(0,0)},line width=2pt,color=ffxfqq,fill=ffxfqq,fill opacity=0.1] (0,0) -- (0:1.8) arc (0:26.56505117707799:1.8) -- cycle;
+\draw [->,line width=2pt,color=ffqqqq] (0,0) -- (4,2);
+\draw [->,line width=2pt,color=qqzzqq] (0,0) -- (0,2);
+\draw [->,line width=2pt,color=qqqqff] (0,0) -- (4,0);
+\draw [->,line width=2pt,dash pattern=on 1pt off 1pt,color=qqccqq] (4,0) -- (4,2);
+\begin{scriptsize}
+\draw[color=ffqqqq] (2.6,1.31) node {$\vec{v}$};
+\draw[color=qqzzqq] (0.8,1.37) node {$$\vec{v_y}$$};
+\draw[color=qqqqff] (3.6,0.47) node {$$\vec{v_x}$$};
+\draw[color=ffxfqq] (2.46,0.55) node {$\theta$};
+\draw[color=qqccqq] (4.9,1.13) node {$$\vec{v_y}'$$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

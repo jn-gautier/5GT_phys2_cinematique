@@ -1,0 +1,17 @@
+\begin{tikzpicture}
+\tikzset{>=latex}
+\definecolor{majorgrid_gray}{RGB} {192,192,192}
+\definecolor{minorgrid_gray}{RGB} {232,232,232}
+
+\def\tkzCoeffSubColor{20} 
+\def\tkzCoeffSubLw{0.2}
+
+\tkzInit[xmin=0,xmax=10,ymin=-3,ymax=5,xstep=1,ystep=1]
+\tkzGrid[color=majorgrid_gray,line width=0.2mm,sub,subxstep=.5,subystep=.5]
+
+\tkzDrawX[label={$X [m]$},below left=25pt]
+\tkzDrawY[label={$Y [m]$},right=5pt]
+\tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelY
+
+\end{tikzpicture}
+
