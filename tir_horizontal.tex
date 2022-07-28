@@ -3,7 +3,7 @@ Le tir horizontal est une situation dans laquelle un objet est lancé horizontal
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=.5 \linewidth]{tir_horizontal.png}
+    \includesvg[inkscapelatex=false,width=.5 \linewidth]{tir_horizontal.svg}
     \caption{Schéma d'un tir horizontal.}
     \label{Schéma d'un tir horizontal}
 \end{figure}
@@ -29,21 +29,25 @@ Cette image montre que les deux corps tombent en même temps, la seule différen
 \section{Le vecteur vitesse dans un mouvement à deux dimensions}
 À un moment donné de sa trajectoire, le mobile possède à la fois une vitesse horizontale, \(\vec{v_x}\), et une vitesse verticale, \(\vec{v_y}\). La vitesse totale du mobile à un instant quelconque est donc donnée par la somme vectorielle de la vitesse horizontale et de la vitesse verticale. Cette somme se fait en utilisant le théorème de Pythagore : \(v_{tot}=\sqrt{v_x ^2 + v_y ^2}\)
 
-\begin{tikzpicture}[line cap=round,line join=round]
+\begin{tikzpicture}
     \tikzset{>=latex}
+    \tkzDefPoint(0,0){o}
+    \tkzDefPoint(3,0){a}
+    \tkzDefPoint(0,-4){b}
+    \tkzDefPoint(3,-4){c}
 
-    \draw [line width=1pt,color=ForestGreen,style=dotted,draw opacity=0.5] (0,-4) -- (3,-4);
-    \draw [line width=1pt,color=BrickRed,style=dotted,draw opacity=0.5] (3,0) -- (3,-4);
+    \tkzMarkRightAngle[size=.3,fill=lightgray,opacity=.5](o,b,c)
 
-    \draw [->,line width=2pt,color=BrickRed] (0,0) -- (0,-4);
-    \draw [->,line width=2pt,color=ForestGreen] (0,0) -- (3,0);
-    \draw [->,line width=2pt,color=YellowOrange] (0,0) -- (3,-4);
+    \tkzDrawSegment[->,line width=2pt,color=ForestGreen](o,a)
+    \tkzLabelSegment[above,color=ForestGreen](o,a){\(\vec{v_x}\)}
+    \tkzDrawSegment[line width=1pt,color=ForestGreen,opacity=0.5,style=dotted](b,c)
 
-    \begin{scriptsize}
-        \draw[color=BrickRed] (0.5,-2) node {\(\vec{v_y}\)};
-        \draw[color=ForestGreen] (1.5,0.2) node {\(\vec{v_x}\)};
-        \draw[color=YellowOrange] (2,-1.5) node {\(\vec{v_{tot}}\)};
-    \end{scriptsize}
+    \tkzDrawSegment[->,line width=2pt,color=NavyBlue](o,b)
+    \tkzLabelSegment[right,color=NavyBlue](o,b){\(\vec{v_y}\)}
+    \tkzDrawSegment[line width=1pt,color=NavyBlue,opacity=0.5,style=dotted](a,c)
+
+    \tkzDrawSegment[->,line width=2pt,color=BrickRed](o,c)
+    \tkzLabelSegment[right=3pt,color=BrickRed](o,c){\(\vec{v_{tot}}\)}
 \end{tikzpicture}
 
 \section{Exercices}
