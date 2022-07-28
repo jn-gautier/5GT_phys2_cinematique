@@ -33,6 +33,7 @@ La vitesse, comme tout vecteur peut se décomposer en une composante verticale e
 \end{itemize}
 
 \begin{tikzpicture}
+    %travailler avec euclide au lieu de tkz-base permet d'avoir une description plus explicite du dessin et des emplacements de labels non aribitraire
     \tikzset{>=latex}
     \tkzDefPoint(0,0){o}
     \tkzDefPoint(4,0){a}
@@ -181,15 +182,15 @@ Par conséquent :
 
 \section{Exercices}
 \begin{exercise}
-    Un mobile est lancé depuis le sol avec une vitesse initiale de \(21[m/s]\) et avec un angle de \(20^{\circ}\) vers le haut.
-    \begin{enumerate}[a)]
+    Un mobile est lancé depuis le sol avec une vitesse initiale de \(21\unit{[m/s]}\) et avec un angle de \(20^{\circ}\) vers le haut.
+    \begin{enumerate}[label=\alph*)]
         \item À quelle distance va-t-il toucher le sol ?
         \item Quelle sera sa vitesse d'impact ?
     \end{enumerate}
 \end{exercise}
 
 \begin{exercise}
-    Un objet est lancé vers le haut avec une vitesse initiale de \(12[m/s]\) et un angle de \(30^{\circ}\) vers le haut.
+    Un objet est lancé vers le haut avec une vitesse initiale de \(12\unit{[m/s]}\) et un angle de \(30^{\circ}\) vers le haut.
     \begin{enumerate}
         \item Quelle distance horizontale a-t-il franchi quand il est au sommet de sa course ?
         \item Quelle est sa vitesse totale à ce moment ?
@@ -199,7 +200,7 @@ Par conséquent :
 
 
 \begin{exercise}
-    Quel doit être l'angle de tir pour toucher un objet situé à une distance de \(127,4[m]\) si la vitesse initiale est de \(50[m/s]\) ?
+    Quel doit être l'angle de tir pour toucher un objet situé à une distance de \(127,4[m]\) si la vitesse initiale est de \(50\unit{[m/s]}\) ?
 \end{exercise}
 \begin{solution}
     \(\theta_1=15^{\circ}\)
@@ -221,22 +222,22 @@ Par conséquent :
 
 
 \begin{exercise}
-    Un objet est lancé avec une vitesse de \(150[m/s]\) et un angle de \(70^{\circ}\).
-    \begin{enumerate}[a)]
+    Un objet est lancé avec une vitesse de \(150\unit{[m/s]}\) et un angle de \(70^{\circ}\).
+    \begin{enumerate}[label=\alph*)]
         \item Quelle est sa vitesse totale lorsqu'il se trouve à \(50[m]\) horizontalement de son point de départ ?
         \item À quelle hauteur se trouve-t-il ?
     \end{enumerate}
 \end{exercise}
 \begin{solution}
     \(t_{50}=0,9746[s]\)
-    \(v_y=131,4[m/s]\)
-    \(v_{tot}=141,1[m/s]\)
+    \(v_y=131,4\unit{[m/s]}\)
+    \(v_{tot}=141,1\unit{[m/s]}\)
     \(y=132,7[m]\)
 \end{solution}
 
 
 \begin{exercise}
-    Un chasseur souhaite tirer une flèche sur un singe situé au sommet d'un arbre de \(50[m]\) de haut et situé à \(30[m]\) de lui. Le chasseur tire sa flèche avec une vitesse de \(20[m/s]\) et un angle de \(59^{\circ}\). Au même instant le singe se laisse tomber afin d'éviter la flèche. Montre que le singe aurait mieux fait de rester dans l'arbre !
+    Un chasseur souhaite tirer une flèche sur un singe situé au sommet d'un arbre de \(50[m]\) de haut et situé à \(30[m]\) de lui. Le chasseur tire sa flèche avec une vitesse de \(20\unit{[m/s]}\) et un angle de \(59^{\circ}\). Au même instant le singe se laisse tomber afin d'éviter la flèche. Montre que le singe aurait mieux fait de rester dans l'arbre !
     \begin{figure}[h!]
         \centering
         \includegraphics[width=.4 \linewidth]{shoot_monkey.png}
@@ -245,14 +246,14 @@ Par conséquent :
 
 
 \begin{exercise}
-    Un tigre bondi à l'horizontale du haut d'un rocher de \(16[m]\) à une vitesse de \(6[m/s]\). À quelle distance de la base du rocher atterrira-t-il ?
+    Un tigre bondi à l'horizontale du haut d'un rocher de \(16[m]\) à une vitesse de \(6\unit{[m/s]}\). À quelle distance de la base du rocher atterrira-t-il ?
 \end{exercise}
 \begin{solution}
     \(t=1,8[s] ; x(t)=10,8[m]\)
 \end{solution}
 
 \begin{exercise}
-    Une lance à incendie tenue près du sol envoie un jet d'eau avec une vitesse de \(13[m/s]\). Selon quels angles faut-il l'orienter pour que l'eau retombe \(16[m]\) plus loin ?
+    Une lance à incendie tenue près du sol envoie un jet d'eau avec une vitesse de \(13\unit{[m/s]}\). Selon quels angles faut-il l'orienter pour que l'eau retombe \(16[m]\) plus loin ?
 \end{exercise}
 \begin{solution}
     \(\theta _1 = 34,12 \)
@@ -264,7 +265,7 @@ Par conséquent :
     En exécutant un saut en longueur un athlète quitte le sol avec un angle de \(28^{\circ}\) et franchit \(8,8[m]\). Détermine sa vitesse lors de l'impulsion.
 \end{exercise}
 \begin{solution}
-    \(v_0=10,204[m/s] \)
+    \(v_0=10,204\unit{[m/s]} \)
 \end{solution}
 
 
@@ -274,8 +275,8 @@ Par conséquent :
 
 
 \begin{exercise}
-    En courant à \(3m/s\), un plongeur se jette du haut d'une falaise et tombe dans la rivière située en dessous 2 secondes plus tard.
-    \begin{enumerate}[a)]
+    En courant à \(3\unit{[m/s]}\), un plongeur se jette du haut d'une falaise et tombe dans la rivière située en dessous 2 secondes plus tard.
+    \begin{enumerate}[label=\alph*)]
         \item Quelle est la hauteur de la falaise ?
         \item À quelle distance de la falaise le plongeur touche-t-il l'eau ?
     \end{enumerate}
