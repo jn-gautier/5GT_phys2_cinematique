@@ -1,0 +1,55 @@
+\begin{tikzpicture}
+    \definecolor{sky_top}{HTML}{9398d2ff}
+    \definecolor{sky_bottom}{HTML}{a5c1e6ff}
+    \definecolor{support_canon}{HTML}{66552aff}
+    \definecolor{canon}{HTML}{3e3f3aff}
+    \definecolor{hill_top}{HTML}{48a24bff}
+    \definecolor{hill_bottom}{HTML}{2f6831ff}
+
+    \newcommand{\supportcanon}{
+        \filldraw[thick,rounded corners=1pt,fill=support_canon](-9,-9) -- (-7,-3) -- (-3,-1) -- (0,0) -- (3,-1) -- (7,-3) -- (9,-9) -- cycle;
+    }
+
+    \newcommand{\canon}{
+        \path (0,0) -- (12,0) node(xline){};
+        \filldraw[thick,fill=canon](-4,0) arc (180:90:4cm and 3cm) arc(90:25:20cm and 3cm) coordinate(W) --(W |- xline);
+        \filldraw[thick,fill=canon](-4,0) arc (180:270:4cm and 3cm) arc(270:335:20cm and 3cm) coordinate(Z) --(Z |- xline);
+    }
+
+    %dessin du ciel
+    \filldraw[top color=sky_top,bottom color=sky_bottom] (-3,-7) rectangle (10,2);
+
+    %placement de la grille
+    \tkzInit[xmin=-3,xmax=10,ymin=-7,ymax=2]
+    \tkzGrid
+
+    %dessin de la colinne
+    \filldraw[thick,top color=hill_top,bottom color=hill_bottom](-3,-7) [rounded corners=10pt]-- (-3,-0.5)  -- (0,-0.5) [rounded corners=30pt]--(5,-4) --(7,-4) [rounded corners=10pt]--  (9,-6)[sharp corners]--(10,-6) -- (10,-7) -- cycle;
+
+    %placement des axes
+    \tkzDrawXY
+
+    %placement du canon et du support
+    \begin{scope}[shift={(-2,0)},scale=.1]
+        \supportcanon
+        \canon
+    \end{scope}
+
+    %placement des points représentant la trajectoire du boulet
+    %V0=10[m/s]
+    %enX : x(t)=10*t
+    %enY : y(t)=-4.905*t
+    \foreach \t in {0,0.1,...,1.1}
+        {\pgfmathsetmacro{\x}{10*\t}
+            \pgfmathsetmacro{\y}{-5*\t*\t}
+            \filldraw [red] (\x,\y) circle (2pt);
+        }
+
+    %le vecteur vitesse initiale
+    \draw[->,>=latex,color=red,line width=3pt](0,0.3) -- (3,0.3);
+    \node at (1.5,0.7)[color=red] {\(\vec{v_0}\)};
+
+    %les commentaires
+    \tkzText[draw, color=black,fill=lightgray,text width=5cm](6,1){Le mouvement horizontal est un MRU}
+    \tkzText[draw, color=black,fill=lightgray,text width=5cm](0,-6){Le mouvement vertical est un MRUA}
+\end{tikzpicture}
