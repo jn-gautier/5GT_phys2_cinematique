@@ -17,15 +17,15 @@
   }
 
   %dessin du ciel
-  \filldraw[top color=sky_top,bottom color=sky_bottom] (-5,-3) rectangle (10,6);
+  \filldraw[top color=sky_top,bottom color=sky_bottom] (-5,-3) rectangle (20,6);
 
   %placement de la grille
-  \tkzInit[xmin=-5,xmax=10,ymin=-3,ymax=6]
+  \tkzInit[xmin=-5,xmax=20,ymin=-3,ymax=6]
   \tkzGrid
 
   %dessin de la colinne
   %\draw (1,0) +(180:1cm) arc (180:210:1cm);
-  \filldraw[thick,top color=hill_top,bottom color=hill_bottom](-5,-3) -- (-5,-2)  arc(180:0:7.5 and .5)--(10,-3) --cycle;
+  \filldraw[thick,top color=hill_top,bottom color=hill_bottom](-5,-3) -- (-5,-2)  arc(180:0:12.5 and 1)--(20,-3) --cycle;
 
   %placement des axes
   \tkzDrawXY
@@ -39,12 +39,12 @@
   \end{scope}
 
   %placement des points représentant la trajectoire du boulet
-  %V0=10[m/s]
-  %enX : x(t)=7.07*t
-  %enY : y(t)=-4.905*t
-  \foreach \t in {0,0.1,...,1.5}
-    {\pgfmathsetmacro{\x}{7.07*\t}
-      \pgfmathsetmacro{\y}{7.07*\t-5*\t*\t}
+  %V0=14,14[m/s]
+  %enX : x(t)=10*t
+  %enY : y(t)=10-4.905*t
+  \foreach \t in {0,0.1,...,2.1}
+    {\pgfmathsetmacro{\x}{10*\t}
+      \pgfmathsetmacro{\y}{10*\t-4.905*\t*\t}
       \filldraw [red] (\x,\y) circle (2pt);
     }
   %
