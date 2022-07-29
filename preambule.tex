@@ -18,6 +18,8 @@
 \tcbuselibrary{skins,listings}
 \usepackage{siunitx}
 \sisetup{locale = FR}
+\newtcbtheorem[number within=section]{mytheo}{}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
 %\tcbset{myformula/.style={colback=yellow!10!white,colframe=red!50!black,
 %      every box/.style={highlight math style={colback=LightBlue!50!white,colframe=Navy}}
 %    }}
@@ -101,7 +103,7 @@
   \end{itemize}
 }
 
-\newenvironment{encadre}{\begin{center}\begin{minipage}[c]{0.8\linewidth}\begin{tcolorbox}}{\end{tcolorbox}\end{minipage}\end{center}}
+\newenvironment{encadre}{\begin{center}\begin{minipage}[c]{0.8\linewidth}\begin{tcolorbox}[colframe=red!50!yellow,colback=red!5!white]}{\end{tcolorbox}\end{minipage}\end{center}}
 
 
 
