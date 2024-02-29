@@ -30,32 +30,34 @@ La vitesse, comme tout vecteur peut se décomposer en une composante verticale e
     \item \(v_y = v \cdot sin(\theta) \)
 \end{itemize}
 
-\begin{tikzpicture}[scale=2]
-    %travailler avec euclide au lieu de tkz-base permet d'avoir une description plus explicite du dessin et des emplacements de labels non aribitraire
-    \tikzset{>=latex}
-    \tkzDefPoint(0,0){o}
-    \tkzDefPoint(4,0){a}
-    \tkzDefPoint(0,2){b}
-    \tkzDefPoint(4,2){c}
+\begin{figure}[h!]
+    \begin{tikzpicture}[scale=2]
+        %travailler avec euclide au lieu de tkz-base permet d'avoir une description plus explicite du dessin et des emplacements de labels non aribitraire
+        \tikzset{>=latex}
+        \tkzDefPoint(0,0){o}
+        \tkzDefPoint(4,0){a}
+        \tkzDefPoint(0,2){b}
+        \tkzDefPoint(4,2){c}
 
-    \tkzMarkRightAngle[size=.3,fill=lightgray,opacity=.5](o,a,c)
-    \tkzFillAngle[size=1cm,left color=white,right color=YellowOrange](a,o,c)
-    \tkzMarkAngle[size = 1cm,color=Orange,mark=none,line width=1pt](a,o,c)
-    \tkzLabelAngle[pos=1.25,color=YellowOrange](a,o,c){\(\theta\)}
+        \tkzMarkRightAngle[size=.3,fill=lightgray,opacity=.5](o,a,c)
+        \tkzFillAngle[size=1cm,left color=white,right color=YellowOrange](a,o,c)
+        \tkzMarkAngle[size = 1cm,color=Orange,mark=none,line width=1pt](a,o,c)
+        \tkzLabelAngle[pos=1.25,color=YellowOrange](a,o,c){\(\theta\)}
 
-    \tkzDrawSegment[->,line width=2pt,color=ForestGreen](o,a)
-    \tkzLabelSegment[above,color=ForestGreen](o,a){\(\vec{v_x}\)}
+        \tkzDrawSegment[->,line width=2pt,color=ForestGreen](o,a)
+        \tkzLabelSegment[above,color=ForestGreen](o,a){\(\vec{v_x}\)}
 
-    \tkzDrawSegment[->,line width=2pt,color=NavyBlue](o,b)
-    \tkzLabelSegment[right,color=NavyBlue](o,b){\(\vec{v_y}\)}
+        \tkzDrawSegment[->,line width=2pt,color=NavyBlue](o,b)
+        \tkzLabelSegment[right,color=NavyBlue](o,b){\(\vec{v_y}\)}
 
-    \tkzDrawSegment[->,line width=2pt,color=Turquoise,style=dashed](a,c)
-    \tkzLabelSegment[right,color=Turquoise](a,c){\(\vec{v_y}'\)}
+        \tkzDrawSegment[->,line width=2pt,color=Turquoise,style=dashed](a,c)
+        \tkzLabelSegment[right,color=Turquoise](a,c){\(\vec{v_y}'\)}
 
-    \tkzDrawSegment[->,line width=2pt,color=BrickRed](o,c)
-    \tkzLabelSegment[right=3pt,color=BrickRed](o,c){\(\vec{v_{tot}}\)}
-\end{tikzpicture}
-
+        \tkzDrawSegment[->,line width=2pt,color=BrickRed](o,c)
+        \tkzLabelSegment[right=3pt,color=BrickRed](o,c){\(\vec{v_{tot}}\)}
+    \end{tikzpicture}
+    \caption{Décomposition du vecteur vitesse}
+\end{figure}
 \newpage
 
 \section{Calcul du temps d'ascension}
@@ -69,16 +71,22 @@ Lors d'un tir oblique avec une vitesse initiale \(\vec{v}\) et un angle de tir \
 La hauteur maximale est atteinte lorsque  \(v_y(t)=0\). Si \(t_0=0\) alors le temps d'ascension est donné par :
 
 \begin{align}
-    v_y(t) & = v_{0y}+a \cdot \Delta t \ \rightarrow \\
-    0      & = v_{0y}+a \cdot \Delta t \ \rightarrow \\
+    v_y(t) & = v_{0y}+a \cdot \Delta t \\
+    0      & = v_{0y}+a \cdot \Delta t \\
     t      & = \frac{-v_{0y}}{a}
 \end{align}
 
 Puisque dans un tir oblique \(v_{0y}=v \cdot sin(\theta)\), le temps pris pour atteindre la hauteur maximale est donné par :
 \begin{align}
-    t = & \frac{-v_{0y}}{a} \ \rightarrow                                                      \\
-    t = & \tcboxmath[colback=green!10,colframe=green!50!black]{\frac{-v \cdot sin(\theta)}{a}}
+    t = & \frac{-v_{0y}}{a} \ \rightarrow  \\
+    t = & \frac{-v_0 \cdot sin(\theta)}{a}
 \end{align}
+
+\begin{encadre_equation*}{Temps d'ascension}
+    \begin{equation}
+        t = \frac{-v_0 \cdot sin(\theta)}{a}
+    \end{equation}
+\end{encadre_equation*}
 
 \newpage
 
@@ -92,32 +100,34 @@ En reprenant l'équation de la position verticale et en remplaçant le temps par
 \end{equation} où :
 
 \begin{itemize}[label=\textbullet]
-    \item \(t=\frac{-v \cdot sin(\theta)}{a}\)
-    \item \(v_{0y}=v \cdot sin(\theta)\)
+    \item \(t=\frac{-v_0 \cdot sin(\theta)}{a}\)
+    \item \(v_{0y}=v_0 \cdot sin(\theta)\)
     \item \(y_0=0\)
 \end{itemize}
 
 Donc :
 
 \begin{equation}
-    y(t)=v \cdot sin(\theta) \cdot \frac{-v \cdot sin(\theta)}{a} + \frac{a}{2} \frac{v^2 \cdot sin^2(\theta)}{a^2}
+    y(t)=v_0 \cdot sin(\theta) \cdot \frac{-v_0 \cdot sin(\theta)}{a} + \frac{a}{2} \frac{v_0^2 \cdot sin^2(\theta)}{a^2}
 \end{equation}
 
-On peut arranger le premier terme puisqu'il y a deux fois les facteurs \enquote{\(v\)} et \enquote{\(sin \theta\)}, on peut aussi simplifier une partie des facteurs \enquote{\(a\)} dans le deuxième terme, cela donne :
+On peut arranger le premier terme puisqu'il y a deux fois les facteurs \enquote{\(v_0\)} et \enquote{\(sin \theta\)}, on peut aussi simplifier une partie des facteurs \enquote{\(a\)} dans le deuxième terme, cela donne :
 
 \begin{equation}
-    y(t)=- \frac{v^2 \cdot sin^2(\theta)}{a} + \frac{1}{2} \frac{v^2 \cdot sin^2(\theta)}{a}
+    y(t)=- \frac{v_0^2 \cdot sin^2(\theta)}{a} + \frac{1}{2} \frac{v_0^2 \cdot sin^2(\theta)}{a}
 \end{equation}
 
 On peut finalement réduire cette somme pour obtenir :
 
-
-\begin{equation}
-    \tcboxmath[colback=green!10,colframe=green!50!black]{y(t)=\frac{-v^2 \cdot sin^2(\theta)}{2 \cdot a}}
-\end{equation}
+\begin{encadre_equation*}{Hauteur maximale}
+    \begin{equation}
+        y(t)=\frac{-v_0^2 \cdot sin^2(\theta)}{2 \cdot a}
+        %\tcboxmath[colback=green!10,colframe=green!50!black]{}
+    \end{equation}
+\end{encadre_equation*}
 
 \section{Calcul du temps de chute}
-Nous savons que la hauteur maximale atteinte lors du tir oblique est donnée par : \(y(t)=\frac{-v^2 \cdot sin^2(\theta)}{2 \cdot a}\). Quel est alors le temps pris par le mobile pour atteindre le sol depuis cette hauteur ?
+Nous savons que la hauteur maximale atteinte lors du tir oblique est donnée par : \(y(t)=\frac{-v_0^2 \cdot sin^2(\theta)}{2 \cdot a}\). Quel est alors le temps pris par le mobile pour atteindre le sol depuis cette hauteur ?
 
 Pour cela, il faut utiliser l'équation du mouvement vertical :
 \begin{equation}
@@ -128,53 +138,57 @@ Pour cela, il faut utiliser l'équation du mouvement vertical :
     \item \(t_0=0\)
     \item \(v_{0y}=0\)
     \item \(y_t=0\), car on atteint le sol
-    \item \(y_0=y_{max}=\frac{-v^2 \cdot sin^2(\theta)}{2 \cdot a}\)
+    \item \(y_0=y_{max}=\frac{-v_0^2 \cdot sin^2(\theta)}{2 \cdot a}\)
 \end{itemize}
 
 Donc :
 \begin{align}
-    0 & =y_{max}+\frac{a}{2} \cdot t^2 \ \rightarrow     \\
-    t & =\sqrt{\frac{-2 \cdot y_{max}}{a}} \ \rightarrow \\
-    t & =\sqrt{\frac{v^2 \cdot sin^2 (\theta)}{a^2}}
+    0 & =y_{max}+\frac{a}{2} \cdot t^2                 \\
+    t & =\sqrt{\frac{-2 \cdot y_{max}}{a}}             \\
+    t & =\sqrt{\frac{v_0^2 \cdot sin^2 (\theta)}{a^2}}
 \end{align}
 
 Il est possible de supprimer la racine carrée, mais n'oublions pas que \(\sqrt{x^2}=\pm x\), donc :
-\begin{equation}
-    \tcboxmath[colback=green!10,colframe=green!50!black]{t=-\frac{v \cdot sin(\theta)}{a}}
-\end{equation}
+\begin{encadre_equation*}{Temps de chute}
+    \begin{equation}
+        t=-\frac{v_0 \cdot sin(\theta)}{a}
+    \end{equation}
+\end{encadre_equation*}
 
 Nous avons pris la racine carrée négative, car \enquote{a} étant négatif, la racine carrée positive n'a pas de sens.
 
 \section{Calcul du temps de parcours total}
 La durée de l'ascension et celle de la descente étaient données par : \(\frac{-v \cdot sin(\theta)}{a}\), la durée totale d'un tir oblique vaut donc :
 
-\begin{equation}
-    \tcboxmath[colback=green!10,colframe=green!50!black]{t_{tot}=\frac{-2 \cdot v \cdot sin(\theta)}{a}}
-\end{equation}
+\begin{encadre_equation*}{Durée totale}
+    \begin{equation}
+        t_{tot}=\frac{-2 \cdot v_0 \cdot sin(\theta)}{a}
+    \end{equation}
+\end{encadre_equation*}
 
 \section{Calcul de la distance horizontale parcourue}
-Le temps total de parcours lors d'un tir oblique est donné par : \(t_{tot}=\frac{-2 \cdot v \cdot sin(\theta)}{a}\).
+Le temps total de parcours lors d'un tir oblique est donné par : \(t_{tot}=\frac{-2 \cdot v_0 \cdot sin(\theta)}{a}\).
 
 La distance parcourue horizontalement est donnée par \(x(t)=x_0+v_x \cdot \Delta t\) où :
 \begin{itemize}[label=\textbullet]
     \item \(t_0=0\)
     \item \(x_0=0\)
-    \item \(v_x=v \cdot cos(\theta)\)
+    \item \(v_x=v_0 \cdot cos(\theta)\)
 \end{itemize}
 
 Par conséquent, la distance totale parcourue horizontalement lors d'un tir oblique est donnée par :
 \begin{align}
-    x(t) & =v \cdot cos(\theta) \cdot \frac{-2 \cdot v \cdot sin(\theta)}{a} \\
-    x(t) & =\frac{-2 \cdot v^2 \cdot cos(\theta) \cdot sin(\theta)}{a}
+    x(t) & =v_0 \cdot cos(\theta) \cdot \frac{-2 \cdot v_0 \cdot sin(\theta)}{a} \\
+    x(t) & =\frac{-2 \cdot v_0^2 \cdot cos(\theta) \cdot sin(\theta)}{a}
 \end{align}
 
 Cette dernière expression peut encore être simplifiée, car elle contient une identité trigonométrique : \(2 \cdot sin(\theta) \cdot cos(\theta)=sin(2 \cdot \theta )\).
 Par conséquent :
-
-\begin{equation}
-    \tcboxmath[colback=green!10,colframe=green!50!black]
-    {x(t)=-\frac{v^2 \cdot sin(2 \theta)}{a}}
-\end{equation}
+\begin{encadre_equation*}{Distance totale horizontale}
+    \begin{equation}
+        x(t)=-\frac{v_0^2 \cdot sin(2 \theta)}{a}
+    \end{equation}
+\end{encadre_equation*}
 
 \newpage
 
@@ -217,6 +231,9 @@ Par conséquent :
 \begin{exercise}
     Un objet est lancé avec un angle de \(30^{\circ}\) vers le haut. Quelle doit être sa vitesse initiale pour qu'il touche le sol à \(50[m]\) du lanceur ?
 \end{exercise}
+\begin{solution}
+    \(v_0=23,7987[m \cdot s^{-1}]\)
+\end{solution}
 
 
 \begin{exercise}
@@ -286,3 +303,4 @@ Par conséquent :
 \begin{exercise}
     \qrcode{https://www.vf-bxl-moodle.be/mod/quiz/view.php?id=1443}
 \end{exercise}
+
