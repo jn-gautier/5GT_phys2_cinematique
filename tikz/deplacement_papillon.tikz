@@ -20,7 +20,7 @@
 \butterfly
 \end{scope}
 
-\tkzDefPoints{0/0/O, 7/0/M, 7/5/P, 2/0/N};
+\tkzDefPoints{0/0/O, 7/0/M, 7/5/P, 2/0/N}
 \tkzFillAngles[fill=orange](M,O,P)
 \tkzDrawPoints[black](O)
 \tkzDrawPoints[olivegreen](P)

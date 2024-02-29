@@ -4,7 +4,7 @@ On appelle \enquote{tir oblique}, \enquote{tir parabolique} ou \enquote{tir bali
     Dans ce mouvement, la position et la vitesse en \(Y\) sont données par les équations du tir vertical. La position et la vitesse en \(X\) sont données par les équations du MRU.
 \end{encadre}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \resizebox{\linewidth}{!}{\input{./tikz/tir_oblique.tikz}}
     \caption{Schéma d'un tir balistique.}
@@ -16,7 +16,7 @@ On appelle \enquote{tir oblique}, \enquote{tir parabolique} ou \enquote{tir bali
 \section{Caractéristiques du tir oblique}
 Comme le montre la chronophotographie ci-dessous, la trajectoire suivie par un objet lancé obliquement est une parabole.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=.5 \linewidth]{chronophotographie_tir_oblique.png}
     \caption{Chronophotographie d'un tir parabolique}
@@ -30,7 +30,7 @@ La vitesse, comme tout vecteur peut se décomposer en une composante verticale e
     \item \(v_y = v \cdot sin(\theta) \)
 \end{itemize}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \begin{tikzpicture}[scale=2]
         %travailler avec euclide au lieu de tkz-base permet d'avoir une description plus explicite du dessin et des emplacements de labels non aribitraire
         \tikzset{>=latex}
@@ -253,7 +253,7 @@ Par conséquent :
 
 \begin{exercise}
     Un chasseur souhaite tirer une flèche sur un singe situé au sommet d'un arbre de \(50[m]\) de haut et situé à \(30[m]\) de lui. Le chasseur tire sa flèche avec une vitesse de \(20\unit{[m/s]}\) et un angle de \(59^{\circ}\). Au même instant le singe se laisse tomber afin d'éviter la flèche. Montre que le singe aurait mieux fait de rester dans l'arbre !
-    \begin{figure}[h!]
+    \begin{figure}[!ht]
         \centering
         \includegraphics[width=.4 \linewidth]{shoot_monkey.png}
     \end{figure}

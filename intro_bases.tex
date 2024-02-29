@@ -1,7 +1,7 @@
 \chapter{Introduction}
 Des atomes aux galaxies, jusqu'à l'univers dans son ensemble, tous les objets autour de nous peuvent être considérés en mouvement. Dans l'étude du monde qui nous entoure, il s'agit d'un des premiers aspects auquel l'homme s'est intéressé. L'étude scientifique du mouvement a commencé avec Galilée (1564-1642) puis Newton (1642-1727). Le mouvement de corps comme une galaxie avec les étoiles qui la composent ou celui des molécules d'air dans le vent sont hautement complexes mais d'autre comme celui d'un objet en chute libre ou d'une voiture sur une autoroute sont plus simples.
 La \motcle{cinématique} est l'étude des mouvements. Dans le cadre de ce cours, seuls les mouvements les plus simples seront abordés : les mouvements continus en ligne droite puis, plus tard, les mouvements circulaires.
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.5\linewidth]{galaxie_andromede.png}
     \caption{La galaxie d'Andromède, la galaxie la plus proche de la Voie lactée. }
@@ -12,7 +12,7 @@ La \motcle{cinématique} est l'étude des mouvements. Dans le cadre de ce cours,
 \chapter{Notions de base}
 \section{Mobile et point matériel}
 Quelle que soit la complexité du corps dont on cherche à étudier le mouvement, le \motcle{mobile}, celui-ci sera représenté par un point ou quelque chose de suffisamment petit par rapport au déplacement effectué. Lorsque le mobile est complexe mais qu'il s'agit d'un solide non déformable, il existe toujours un point appelé \motcle{centre de masse} ou centre d'inertie qui se comporte comme si toute la masse du corps était située en ce point.
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.7\linewidth]{mouvement_centre_masse.png}
     \caption{Le centre de masse décrit une parabole (Centre of mass in extreme sports). }
@@ -48,11 +48,11 @@ Le schéma ci-dessous représente un homme qui cours, la ligne graduée sert de 
     \item soit on met en évidence de numéro de la mesure et la position se note \(x_i\).
 \end{itemize}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \resizebox{.7\linewidth}{!}{\input{./tikz/position_repere.tikz}}
     \caption{Un mouvement à une dimension.}
-    \label{position_referentiel}
+    \label{position_referentiel_1}
 \end{figure}
 
 Complète le tableau ci-dessous en attribuant un symbole à chaque valeur de temps et de position.\\
@@ -83,11 +83,11 @@ Complète le tableau ci-dessous en attribuant un symbole à chaque valeur de tem
 \section{Trajectoire}
 La trajectoire d'un objet en mouvement est l'ensemble des positions qu'a occupé cet objet au cours de son mouvement.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \resizebox{.6\linewidth}{!}{\input{./tikz/trajectoire_papillon.tikz}}
     \caption{La trajectoire,en rouge, dans un mouvement à deux dimensions.}
-    \label{position_referentiel}
+    \label{position_referentiel_2}
 \end{figure}
 
 \section{Le déplacement et la durée}
@@ -96,11 +96,11 @@ Pour calculer un déplacement, on fait la différence entre la deuxième et la p
 
 La \motcle{durée} mesure le temps qui s'est écoulé entre ces deux observations, elle correspond à la différence de temps entre celles-ci. Durée  :\(\Delta t=t_2-t_1\).
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \resizebox{.6\linewidth}{!}{\input{./tikz/deplacement_papillon.tikz}}
     \caption{Le déplacement, en vert, il peut être inférieur à la longueur de la trajectoire.}
-    \label{position_referentiel}
+    \label{position_referentiel_3}
 \end{figure}
 
 \subsection{delta : la différence}
@@ -113,7 +113,7 @@ En physique, comme en mathématique, le symbole \(\Delta\) signifie qu'on fait u
 
 \section{Le vecteur position}
 La position d'un objet au sein d'un référentiel peut être représentée par son vecteur position : le vecteur ayant pour origine l'origine du référentiel et son autre extrémité à la position du point. Si l'on note M cette position et O l'origine, le vecteur position se note \(\vec{OM}\) ou \(\vec{r}\).
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \resizebox{0.8\linewidth}{!}{\input{./tikz/vecteur_position.tikz}}
     \caption{Le vecteur position du point M et du point P.}
@@ -124,7 +124,7 @@ La position d'un objet au sein d'un référentiel peut être représentée par s
 
 \section{Le vecteur déplacement}
 Le déplacement a été défini comme la différence entre deux positions. Ceci reste valable lorsqu'on considère la dimension vectorielle de la position. Le déplacement de M à P correspond donc à \(\vec{OP} - \vec{OM}\).
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \resizebox{0.8\linewidth}{!}{\input{./tikz/vecteur_deplacement.tikz}}
     \caption{Le vecteur déplacement entre M et P.}
@@ -141,7 +141,7 @@ Un mobile se trouve à la position \(P_1 :(3 ; 4)\). Quelques instants plus tard
     \item Détermine la longueur du déplacement vertical, \(\Delta y\).
     \item Détermine, par calcul (Pythagore), la longueur du vecteur déplacement, \(\vec{\Delta r}\).
 \end{itemize}
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \resizebox{0.8\linewidth}{!}{\input{./tikz/repere_exe.tikz}}
     \caption{Position dans un plan}
@@ -159,7 +159,7 @@ La \motcle{vitesse moyenne} est une valeur qui se calcule sur un déplacement et
 La vitesse instantanée correspond à la vitesse moyenne calculée sur un intervalle de temps extrêmement court. Comme tu le découvriras cette année, ceci est relié à la notion de limite.
 \(v_{inst}= \lim_{\Delta t \to 0}  \frac{\Delta x}{\Delta t}\)
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.7\linewidth]{vitesse_instantanee.png}
     \caption{Un compteur de vitesse indique la vitesse instantanée.}
@@ -175,7 +175,7 @@ La vitesse instantanée étant définie comme : \(v_{inst}= \lim_{\Delta t \to 0
     De même, en physique, une vitesse est toujours définie comme étant la \motcle{dérivée de la position par rapport au temps}.
 \end{encadre}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \resizebox{0.8\linewidth}{!}{\input{./tikz/vitesse_tangente.tikz}}
     \caption{Le vecteur vitesse instantanée est toujours tangent à la courbe de la trajectoire.}
@@ -218,11 +218,11 @@ La vitesse instantanée étant définie comme : \(v_{inst}= \lim_{\Delta t \to 0
 \end{enumerate}
 
 \newpage
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \resizebox{\linewidth}{!}{\input{./tikz/analyse_deplacement.tikz}}
     \caption{Le graphique de la position en fonction du temps.}
-    \label{exercice_deplacement}
+    \label{exercice_deplacement_1}
 \end{figure}
 
 \newpage
@@ -230,11 +230,11 @@ La vitesse instantanée étant définie comme : \(v_{inst}= \lim_{\Delta t \to 0
 \subsection{Applications}
 \begin{enumerate}
     \item Le graphique ci-dessous représente la trajectoire d'un mobile. Représente l'allure du vecteur vitesse à différents moments de ce mouvement.
-          \begin{figure}[h!]
+          \begin{figure}[!ht]
               \centering
               \resizebox{.8\linewidth}{!}{\input{./tikz/exercice_vecteur_vitesse.tikz}}
               \caption{Le graphique de la trajectoire.}
-              \label{exercice_deplacement}
+              \label{exercice_deplacement_2}
           \end{figure}
     \item Un mobile se déplace vers l'Est à la vitesse de \(\num{3} \unit{[m/s]}\) durant \(12 \unit{[s]}\). Il s'arrête puis repart vers le Nord-Ouest à la vitesse \(2 \sqrt{2} \unit{[m/s]}\) durant \(6\unit{[s]}\).
           \begin{enumerate}[label=\alph*)]

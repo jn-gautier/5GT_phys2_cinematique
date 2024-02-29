@@ -14,7 +14,7 @@
 \tkzDrawY[label={$Y [m]$},right=5pt]
 \tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelY
 
-\tkzDefPoints{0/0/O, 4/5/M, 7/3/P};
+\tkzDefPoints{0/0/O, 4/5/M, 7/3/P}
 \tkzDrawPoints[black](O)
 \tkzDrawPoints[blue](M)
 \tkzDrawPoints[red](P)

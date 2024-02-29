@@ -5,7 +5,7 @@
 \tkzDrawY[label={$Vitesse[m \cdot s^{-1}]$},right=5pt]
 \tkzAxeXY[label={}] %This macro combines the four macros: \tkzDrawX\tkzDrawY \tkzLabelX\tkzLabelY
 
-\tkzDefPoints{0/2/O, 10/6/A, 8/10/B};
+\tkzDefPoints{0/2/O, 10/6/A, 8/10/B}
 \tkzDrawSegment[blue](O,A)
 \tkzDrawSegment[red](O,B)
 \tkzLabelSegment[color=blue,above=5pt](O,A){$A$}
