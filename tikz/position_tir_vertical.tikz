@@ -1,4 +1,4 @@
- \begin{tikzpicture}[>=latex,scale=0.8]
+ \begin{tikzpicture}[>=latex,scale=0.9]
             \tkzInit[xmax=20,ymax=20,xstep=2,ystep=2]
             \tkzGrid[]
             \tkzDrawX[label={$Temps\unit{[s]}$},below left=25pt]
